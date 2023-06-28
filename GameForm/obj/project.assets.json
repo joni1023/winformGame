@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Joni\\.nuget\\packages\\": {}
+    "C:\\Users\\psarmiento20_1930\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joni\\source\\repos\\GameForm\\GameForm\\GameForm.csproj",
+      "projectUniqueName": "C:\\Users\\psarmiento20_1930\\Desktop\\bdt\\winformGame\\GameForm\\GameForm.csproj",
       "projectName": "GameForm",
-      "projectPath": "C:\\Users\\Joni\\source\\repos\\GameForm\\GameForm\\GameForm.csproj",
-      "packagesPath": "C:\\Users\\Joni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joni\\source\\repos\\GameForm\\GameForm\\obj\\",
+      "projectPath": "C:\\Users\\psarmiento20_1930\\Desktop\\bdt\\winformGame\\GameForm\\GameForm.csproj",
+      "packagesPath": "C:\\Users\\psarmiento20_1930\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\psarmiento20_1930\\Desktop\\bdt\\winformGame\\GameForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Joni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\psarmiento20_1930\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

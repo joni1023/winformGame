@@ -174,6 +174,7 @@
             btnAceptarFin.TabIndex = 2;
             btnAceptarFin.Text = "Aceptar";
             btnAceptarFin.UseVisualStyleBackColor = true;
+            btnAceptarFin.Click += btnAceptarFin_Click;
             // 
             // lbNombres
             // 

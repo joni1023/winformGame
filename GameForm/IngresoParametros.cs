@@ -42,22 +42,30 @@ namespace GameForm
 
         private void btnAceptarCant_Click(object sender, EventArgs e)
         {
-            
-            cantJugadores = Convert.ToInt32(tbCantJugadores.Text);
-            if (cantJugadores <1 || cantJugadores >10 )
+            if (String.IsNullOrEmpty(tbCantJugadores.Text.ToString()))
             {
-                errorProvider1.SetError(tbCantJugadores,"Ingrese un numero entre 1 y 10");
+                errorProvider1.SetError(tbCantJugadores, "Ingrese un numero entre 1 y 10");
                 tbCantJugadores.Clear();
                 tbCantJugadores.Focus();
             }
             else
             {
-                errorProvider1.Clear();
-                gbCantidad.Enabled = false;
-                gbTiros.Enabled = true;
-                tbTiros.Focus();
+                cantJugadores = Convert.ToInt32(tbCantJugadores.Text);
+                if (cantJugadores < 1 || cantJugadores > 10)
+                {
+                    errorProvider1.SetError(tbCantJugadores, "Ingrese un numero entre 1 y 10");
+                    tbCantJugadores.Clear();
+                    tbCantJugadores.Focus();
+                }
+                    errorProvider1.Clear();
+                    gbCantidad.Enabled = false;
+                    gbTiros.Enabled = true;
+                    tbTiros.Focus();
+                
+
             }
             
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -130,30 +138,37 @@ namespace GameForm
                 }
                 tbNombre.Text = "";
             }
-           
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             lbNombres.Items.Clear();
-            indice= 0;
-            tbNombre.Enabled= true;
-            btnAgregar.Enabled= true;
-            btnAceptarFin.Enabled= false;
+            indice = 0;
+            tbNombre.Enabled = true;
+            btnAgregar.Enabled = true;
+            btnAceptarFin.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             
-            tiros = Convert.ToInt32(tbTiros.Text);
-            if(tiros <1 || tiros > 10)
+            if (String.IsNullOrEmpty(tbTiros.Text.ToString()))
             {
                 errorProvider1.SetError(tbTiros, "Ingrese un numero entre 1 y 10");
                 tbTiros.Clear();
                 tbTiros.Focus();
             }
             else
-            {
+            {  
+                tiros = Convert.ToInt32(tbTiros.Text);
+                if (tiros < 1 || tiros > 10)
+                {
+                    errorProvider1.SetError(tbTiros, "Ingrese un numero entre 1 y 10");
+                    tbTiros.Clear();
+                    tbTiros.Focus();
+                }
                 errorProvider1.Clear();
                 gbTiros.Enabled = false;
                 gbNombres.Enabled = true;
@@ -172,6 +187,12 @@ namespace GameForm
             gbTiros.Enabled = true;
             tbTiros.Focus();
             lbNombres.Items.Clear();
+        }
+
+        private void btnAceptarFin_Click(object sender, EventArgs e)
+        {
+            JugarForm jugarAhora = new JugarForm(cantJugadores, tiros, vecNombres);
+            jugarAhora.ShowDialog();
         }
     }
 }

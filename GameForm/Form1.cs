@@ -24,7 +24,6 @@ namespace GameForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnSalir.Enabled = false;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
