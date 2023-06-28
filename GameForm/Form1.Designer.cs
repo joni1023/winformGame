@@ -50,7 +50,7 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(408, 285);
+            btnSalir.Location = new Point(309, 285);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(75, 23);
             btnSalir.TabIndex = 1;
@@ -70,11 +70,11 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(303, 285);
+            btnAceptar.Location = new Point(408, 285);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(75, 23);
             btnAceptar.TabIndex = 3;
-            btnAceptar.Text = "Aceptar";
+            btnAceptar.Text = "Jugar";
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
